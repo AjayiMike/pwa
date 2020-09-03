@@ -7,9 +7,7 @@
 //         caches.open(cacheId).then(cache =>
 //             cache.addAll(cached_assets)
 //         )
-//     ).then(() => {
-//         self.skipWaiting()
-//     });
+//     )
 // })
 // self.addEventListener("activate", e => {
 //     console.log("from activate handler")
@@ -41,18 +39,15 @@ const cacheId = "cache_V1";
 
 self.addEventListener("install", e => {
         console.log("service worker installed!")
-        caches.open("cacheId").then(cache => {
-            cache.add(["./index.html"])
-        })
 })
+
+
 self.addEventListener("activate", e => {
-    console.log("service worker activated!")
     e.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.filter(cache => {
                     if(cache !== cacheId) {
-                        console.log("deleting old cache");
                         return caches.delete(cache)
                     }
                 })
@@ -62,12 +57,10 @@ self.addEventListener("activate", e => {
 })
 
 self.addEventListener("fetch", e => {
-    console.log("fetching data")
     e.respondWith(
         fetch(e.request).then(res => {
             const clonedRes = res.clone();
             caches.open(cacheId).then(cache => cache.put(e.request, clonedRes));
-            console.log("fetched over network");
             return res;
         }).catch(err =>  {
             caches.match(e.request)

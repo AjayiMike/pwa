@@ -33,8 +33,8 @@ window.addEventListener("load", () => {
     //fetch home page data
     if(document.querySelector("#home-main")) {
         container = document.querySelector("#home-main");
-        fetch("../assets/userData.json")
-            .then(res => {
+        fetch("https://api.npoint.io/745b84668d3d7c6ea7b1").then(
+            res => {
                 return res.json()
             })
             .then(data => {
@@ -44,7 +44,7 @@ window.addEventListener("load", () => {
                     <p>${user.faculty}</p>
                     <p>Department: ${user.dept}</p>
                     </div>`;
-           });
+           })
            container.innerHTML  = html;
 
            
@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
         let expand = false;
         container = document.querySelector("#faq-main");
         const faq = async () => {
-         await fetch("../assets/faq.json").then(res => {
+         await fetch("https://api.npoint.io/f3a79ef949515799ba9f").then(res => {
                 return res.json()
             }).then(data => {
                 data.faqs.forEach(faq => {
