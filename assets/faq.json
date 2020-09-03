@@ -1,0 +1,53 @@
+{
+    "faqs": [
+        {
+            "question": "What is a PWA?",
+            "answer": "PWA or Progressive Web Application is an app written in a web language (JavaScript + frameworks) that works as a native mobile or desktop application."
+        },
+        {
+            "question": "What are the features of  PWA",
+            "answer": "It holds a lot of mobile app features, such as: push notifications, ability to work offline and in the background, use of camera, geolocation or gesture navigation and many, many more. Yet, contrary to the traditional mobile app, you don’t have to download it. You can simply use it via a browser."
+        },
+        {
+            "question": "What difference does PWA make for end user",
+            "answer": "From a user’s perspective, the application written in PWA combines the best of both worlds: mobile browser and mobile app. It allows easy access directly from the search engine and doesn’t require any additional installation steps — as if you were accessing a website via the browser on your mobile device. But at the same time, it’s optimised for mobile devices. It enables you to use the native functions of the smartphones and tablets, such as push notifications, gesture navigation, camera, QR / bar codes, geolocation."
+        },
+        {
+            "question": "What browsers support PWA",
+            "answer": "All modern mobile and desktop internet browsers, support both the technologies used to build the PWA and the standard itself. Check out support of service workers, main underlying mechanism of PWAs."
+        },
+        {
+            "question": "WilL PWA work perfectly on any mobile device?",
+            "answer": "Yes! If your site meets the requirements of the PWA Checklist and passes Google Lighthouse benchmark, all users on any device will benefit from PWA. The only exception is devices with outdated versions of mobile operating systems that do not support latest browsers."
+        },
+        {
+            "question": "Is PWA just another technological buzzword?",
+            "answer": "Definitely not! Why? Because the way we use mobile devices has changed dramatically and irreversibly. We download fewer applications that we used to and use only a few regularly At the same time, we browse a lot of online content on our smartphones and expect the experience to be convenient and frictionless — even if without a dedicated application.."
+        },
+        {
+            "question": "How long will the implementation take?",
+            "answer": "The average PWA implementation project takes about 3 or 4 months, but a lot depends on the specifics of a given website or e-commerce. To optimize the process, consider ready-to-use applications, like the e-point’s PWA Commerce Accelerator, which is very likely to reduce that time even up to few weeks."
+        },
+        {
+            "question": "Who needs PWA most?",
+            "answer": "This is a difficult question because due to increasing mobile traffic and user behavior trends mentioned above, PWA will be beneficial to every type of business and every industry, from FMCG to news portals. Most advantages, however, will be visible when online sales are involved, both in B2B and B2C because PWA supports customer’s omnichannel journey. PWA can also move customer service to the next level: we can keep the customer up to date with invoices to be paid, orders to receive, etc. by using push notifications directly from the browser. Additionally, PWA means a cohesive customer experience (CX) on all devices."
+        },
+        {
+            "question": "What are the best examples of PWAs?",
+            "answer": "There are a lot of inspirational examples in various industries. You can find a lot of inspiring case studies on Google Developer page"
+        },
+        {
+            "question": "Who should you hire for PWA implementation project?",
+            "answer": "The implementation of a website compliant with the PWA standard requires similar personnel as front-end projects. So the team should include: Front-end Developers (JavaScript, HTML, CSS, frameworks) Full-stack Developers (JavaScript, frameworks) UX experts and Project Managers"
+        },
+        {
+            "question": "Does PWA support SEO?",
+            "answer": "Contrary to the popular myth, just implementing PWA won’t ensure better positioning of the website in search engines. But if you meet the checklist requirements and stick to all points, without any omissions or simplifications, your web application will be higher in the ranking than others that do not follow these assumptions."
+        },
+        {
+            "question": "Vue or React: which technology to choose?",
+            "answer": "It depends on the scale of the business. Vue.js is a remarkable set of tools (framework) for smaller projects because it’s focused on functional simplicity. The only problem is, however, that it doesn’t have any support from bigger companies which would undoubtedly ensure stability in the dynamic world of JavaScript technology. React.js has Facebook backing as well as a broad community supporting it. At e-point, we chose React.js technology because of the access to information, greater control over the architecture of projects (React does not impose any specific requirements, as opposed to Angular), better adjustment to the enterprise sector due to efficiency, stability and security and good quality of accompanying libraries (Redux, React Router, Next.js)."
+        }
+        
+    ]
+}

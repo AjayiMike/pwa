@@ -1,0 +1,80 @@
+{
+    "short_name": "modern web",
+    "name": "modern web app",
+    "lang": "en",
+    "description": "a simple example of modern web application",
+    "start_url": "/",
+    "background_color": "#ffebcd",
+    "theme_color": "#000000",
+    "dir": "ltr",
+    "display": "standalone",
+    "orientation": "any",
+    "prefer_related_applications": false,
+    "icons": [
+     {
+      "src": "./ICON/android-icon-192x192-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "192x192"
+     },
+     {
+      "src": "./ICON/apple-icon-180x180-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "180x180"
+     },
+     {
+      "src": "./ICON/apple-icon-152x152-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "152x152"
+     },
+     {
+      "src": "./ICON/apple-icon-144x144-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "144x144"
+     },
+     {
+      "src": "./ICON/apple-icon-120x120-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "120x120"
+     },
+     {
+      "src": "./ICON/apple-icon-114x114-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "114x114"
+     },
+     {
+      "src": "./ICON/favicon-96x96-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "96x96"
+     },
+     {
+      "src": "./ICON/apple-icon-76x76-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "76x76"
+     },
+     {
+      "src": "./ICON/apple-icon-72x72-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "72x72"
+     },
+     {
+      "src": "./ICON/apple-icon-60x60-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "60x60"
+     },
+     {
+      "src": "./ICON/apple-icon-57x57-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "57x57"
+     },
+     {
+      "src": "./ICON/favicon-32x32-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "32x32"
+     },
+     {
+      "src": "./ICON/favicon-16x16-dunplab-manifest-4031.png",
+      "type": "image/png",
+      "sizes": "16x16"
+     }
+    ]
+   }

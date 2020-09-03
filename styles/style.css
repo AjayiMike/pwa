@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    border:none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffebcd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    margin: 0;
+    background-color: #000;
+    width: 100%;
+    position: relative;
+    height: 5em;
+    transition: height ease-in-out .3s;
+}
+
+header #logo {
+    position: absolute;
+    top: 1.7em;
+    left: 1em;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 2px;
+    
+}
+
+header #harmburger {
+    position: absolute;
+    top: 2.2em;
+    right: 1em;
+    height: 1.7em;
+    width: 1.7em;
+
+
+}
+
+header #harmburger .harm-bar {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: .8em;
+    right: 0;
+    background-color: #ffebcd;
+}
+
+header #harmburger .harm-bar::before, header #harmburger .harm-bar::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 1.7em;
+    background-color: #ffebcd;
+}
+
+header #harmburger .harm-bar::before {
+    top: -.8em;
+    transition: all ease-in-out .3s;
+
+}
+
+header #harmburger .harm-bar::after {
+    bottom: -.8em;
+    transition: all ease-in-out .3s;
+
+}
+
+.open::after {
+    transform: rotate(45deg);
+    top: 0 !important;
+}
+.open::before {
+    transform: rotate(-45deg);
+    top: 0 !important;
+}
+
+header nav {
+    position: absolute;
+    top: 6em;
+    background-color: #000;
+    width: 100%;
+    display: none;
+}
+
+nav ul li {
+    color: #ffebcd;
+    margin: 1em;
+    list-style: none;
+    font-size: 1em;
+    margin-left: 1.2em;
+    padding: 1em;
+}
+
+nav ul li.active a {
+    background-color: #ffebcd;
+    border-radius: 3px;
+    
+}
+
+nav ul li a {
+    color: #ffebcd;
+    text-decoration: none;
+    padding: .5em;
+}
+
+nav ul li.active a {
+    color: #000;
+    
+}
+
+nav ul li a:hover {
+    opacity: .8;
+}
+
+footer {
+    width: 100vw;
+    background-color: #000;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffebcd;
+}
+
+main {
+    color: #000;
+    min-height: calc(100vh - 80px - 64px);
+}
+
+main .user-card {
+    background-color: #fff;
+    height: 6em;
+    width: 80%;
+    border-radius: 3px;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 0 4px #524d4d;
+    transition: all ease-in-out .3s;
+}
+
+main .user-card:hover {
+    padding: .8em;
+}
+
+.user-card h3 {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    margin-bottom: .5em;
+    font-weight: 300;
+}
+
+.user-card p {
+    font-size: 1em;
+    font-weight: 100;
+    margin-bottom: .4em;
+}
+
+#about-main {
+ margin: 1em 1.5em;
+ padding: 2em 1em;
+ background-color: #fff;
+ border-radius: 5px;
+}
+
+#about-main h2 {
+    font-variant: small-caps;
+    font-size: 1.6em;
+    text-align: center;
+    text-shadow: 0 0 4px #000;
+    color: #ffebcd
+}
+
+#about-main p {
+    font-size: .9em;
+    font-weight: 100;
+    text-align: justify;
+    margin-top: .7em;
+    letter-spacing: .7px;
+}
+
+#about-main p a {
+    color: #63b663;
+    text-decoration: none;
+}
+#about-main #home-button {
+    margin: 2em auto;
+    display: inline-block;
+    border: none;
+    background-color: #000;
+    color: #ffebcd;
+    padding: .8em;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+#faq-main {
+    margin: 0 1em;
+}
+#faq-main .faq {
+    background-color: #ffebcd;
+    box-shadow: 0 0 4px #000;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 4px;
+    transition: all ease-in-out .3s;
+    
+}
+#faq-main .faq:hover {
+    box-shadow: 0 0 8px #000;
+    
+}
+
+#faq-main .faq .heading {
+    position: relative;
+    width: 100%;
+    padding: 1em 0;
+}
+
+#faq-main .faq .heading h4 {
+    width: 90%;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#faq-main .faq .heading span {
+    position: absolute;
+    display: inline-block;
+    width: 1em;
+    top: .2em;
+    right: 0em;
+    font-size: 2em;
+    font-weight: 300;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: all ease-in-out .4s;
+}
+
+#faq-main .faq .heading span.show {
+    
+    transform: rotate(270deg);
+}
+
+#faq-main .faq p {
+   font-size: .8em;
+   line-height: 1.5em;
+   display: none;
+   text-align: justify;
+   width: 85%;
+}
+
+
+/* media Queries here */
+@media only screen and (min-device-width: 768px) {
+    #harmburger {
+        display: none;
+    }
+    header nav {
+        display: inline-block;
+        position: static;
+        margin-top: 1em;
+        width: max-content;
+        margin-left: 10em;
+        
+    }
+    
+    nav ul li {
+        margin: .4em;
+        list-style: none;
+        font-size: 1em;
+        padding: 1em;
+        display: inline-block;
+    }
+    main, #faq-main, #about-main{
+        width: 75%;
+        margin: 0 auto;
+    }
+    #about-main {
+        padding: 2em 4em;
+    }
+
+}
