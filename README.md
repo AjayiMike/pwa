@@ -1,0 +1,1 @@
+after learning about progresive we app, i decided to put the knowledge to work by creating a small app
